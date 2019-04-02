@@ -1,5 +1,12 @@
 # yubinbango.js
 
+クライアントサイドJavaScriptで、郵便番号から住所を取得することができます。
+
+[yubinbango/yubinbango-core](https://github.com/yubinbango/yubinbango-core)からのフォークです。
+
+npm経由でインストールすることができ、ブラウザ上で動作します。
+
+
 This is a fork repository from [yubinbango/yubinbango-core](https://github.com/yubinbango/yubinbango-core).
 
 This package is available on npm and only run on the browser.
