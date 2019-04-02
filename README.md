@@ -1,12 +1,29 @@
-# YubinBango-Core
+# yubinbango.js
 
-YubinBango-Coreに7桁の郵便番号を与えると住所をオブジェクトで取得します。
+This is a fork repository from [yubinbango/yubinbango-core](https://github.com/yubinbango/yubinbango-core).
 
-郵便番号検索ライブラリの[YubinBango](https://github.com/yubinbango/yubinbango)や[ajaxzip3](https://github.com/yubinbango/ajaxzip3)の内部で使用されています。
+This package is available on npm and only run on the browser.
 
-使用方法はtestをご覧ください。
+## Installation
 
-## Install
+`npm install yubinbango.js`
 
-    npm install yubinbango-core
+## Usage
+
+```javascript
+import YubinBango from 'yubinbango.js';
+YubinBango.getAddress('1058711').then(res => {
+    console.log(res);
+});
+
+/* output:
+{
+  extended: "１丁目１１－２（芝郵便局私書箱第２１１号）",
+  locality: "品川区",
+  prefecture: "東京都",
+  street: "大崎"
+}
+*/
+```
+
 
